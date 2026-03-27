@@ -70,7 +70,8 @@ display=swap" rel="stylesheet">
              <br><br>
 
 
-    <button type="submit" id="submit"name="submit">Login</button>
+    <button type="submit" id="submit"name="submit" onclick="check()">Login</button>
+    
     
 
 
@@ -78,7 +79,38 @@ display=swap" rel="stylesheet">
 
     </form>
 
+<script>
+function check(){
+    var user=document.getElementById("Email").value;
+     var password=document.getElementById("pw").value;
 
+     if ((user === "") || (password === "")){
+        alert ("nothing");
+
+     }
+     else if ((user === "jhondoe@email.com") && (password === "hapyhapy")){
+        alert ("yehey");
+     }
+     else {
+        alert("No match");
+     }
+}
+
+function function_name_here() {
+        let variable_name= document.getElementById("checkboxID").checked; 
+
+        switch(variable_name) {
+            case true:
+                
+            break;
+
+            case false:
+                
+            break;
+
+ }
+}
+</script>
 
 </div>
 </body>

@@ -65,7 +65,7 @@ display=swap" rel="stylesheet">
 
             <br><br>
 
-        <input type="radio" name="rem" id="rem">
+        <input type="checkbox" name="rem" id="rem">
         <label for="rem">Remember Me</label>
              <br><br>
 
@@ -97,15 +97,15 @@ function check(){
 }
 
 function function_name_here() {
-        let variable_name= document.getElementById("checkboxID").checked; 
+        let var1 = document.getElementById("rem").checked; 
 
-        switch(variable_name) {
+        switch(var1) {
             case true:
-                
+                alert ("Info saved");
             break;
 
             case false:
-                
+                document.getElementById("").innerHTML = "";
             break;
 
  }
